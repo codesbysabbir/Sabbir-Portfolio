@@ -54,6 +54,39 @@ button {
 }
 
 
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  position: fixed;
+  z-index: 100;
+
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: min(1180px, calc(100% - 32px));
+  height: 74px;
+
+  padding: 0 24px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+
+  background: rgba(8, 9, 11, 0.65);
+
+  backdrop-filter: blur(18px);
+
+  transition: box-shadow 0.3s;
+}
 
 body.light .navbar {
   background: rgba(245, 246, 242, 0.75);
