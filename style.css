@@ -595,7 +595,8 @@ h2 span {
 
   display: block;
 
-  height: 310px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
 
   overflow: hidden;
 
@@ -1156,7 +1157,7 @@ footer a:hover {
   }
 
   .project-image {
-    height: 250px;
+    height: auto;
   }
 
   .project-info {
