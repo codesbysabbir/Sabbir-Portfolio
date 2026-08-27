@@ -13,11 +13,13 @@ if (savedTheme === "light") {
 
 updateThemeIcon();
 
+
 themeToggle.addEventListener("click", () => {
 
   body.classList.toggle("light");
 
-  const isLight = body.classList.contains("light");
+  const isLight =
+    body.classList.contains("light");
 
   localStorage.setItem(
     "sabbir-theme",
@@ -25,6 +27,7 @@ themeToggle.addEventListener("click", () => {
   );
 
   updateThemeIcon();
+
 });
 
 
@@ -34,6 +37,7 @@ function updateThemeIcon() {
     body.classList.contains("light")
       ? "☾"
       : "☼";
+
 }
 
 
@@ -41,8 +45,12 @@ function updateThemeIcon() {
 // MOBILE MENU
 // ================================
 
-const menuBtn = document.getElementById("menuBtn");
-const nav = document.getElementById("nav");
+const menuBtn =
+  document.getElementById("menuBtn");
+
+const nav =
+  document.getElementById("nav");
+
 
 menuBtn.addEventListener("click", () => {
 
@@ -52,6 +60,7 @@ menuBtn.addEventListener("click", () => {
     nav.classList.contains("open")
       ? "×"
       : "☰";
+
 });
 
 
@@ -80,26 +89,27 @@ document.getElementById("year").textContent =
 // SCROLL REVEAL
 // ================================
 
-const observer = new IntersectionObserver(
-  (entries) => {
+const observer =
+  new IntersectionObserver(
+    (entries) => {
 
-    entries.forEach(entry => {
+      entries.forEach(entry => {
 
-      if (entry.isIntersecting) {
+        if (entry.isIntersecting) {
 
-        entry.target.classList.add("visible");
+          entry.target.classList.add("visible");
 
-        observer.unobserve(entry.target);
+          observer.unobserve(entry.target);
 
-      }
+        }
 
-    });
+      });
 
-  },
-  {
-    threshold: 0.12
-  }
-);
+    },
+    {
+      threshold: 0.12
+    }
+  );
 
 
 document
@@ -112,10 +122,12 @@ document
 
 
 // ================================
-// NAVBAR SHADOW ON SCROLL
+// NAVBAR SHADOW
 // ================================
 
-const navbar = document.querySelector(".navbar");
+const navbar =
+  document.querySelector(".navbar");
+
 
 window.addEventListener("scroll", () => {
 
